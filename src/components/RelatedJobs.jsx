@@ -44,7 +44,7 @@ function RelatedJobs() {
     <section className="max-w-full max-h-fit pt-16">
       <div className="container mx-auto w-full h-fit flex flex-col items-start gap-y-16">
         <h2 className="text-4xl font-bold leading-[2.5]">Related Jobs</h2>
-        <div className="flex gap-x-4">
+        <div className="flex sm:gap-x-4 gap-y-4 sm:flex-row flex-col">
           {data.map((get) => (
             <div
               className="relative w-fit p-2 dark:bg-gray-800 bg-gray-200 rounded-xl"

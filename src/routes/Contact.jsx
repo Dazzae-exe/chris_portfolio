@@ -17,8 +17,11 @@ function Contact() {
           project.
         </p>
 
-        <form method="post" className="grid grid-cols-12 gap-4 pt-12">
-          <div className="w-full bg-gray-200 p-4 rounded-xl h-full flex flex-col items-start col-span-6 gap-y-2">
+        <form
+          method="post"
+          className="grid grid-cols-12 gap-y-8 sm:gap-x-4 pt-12"
+        >
+          <div className="w-full bg-gray-200 p-4 rounded-xl h-full flex flex-col items-start col-span-12 sm:col-span-6 gap-y-2">
             <label
               htmlFor="name"
               className="dark:text-black text-lg font-normal"
@@ -78,7 +81,7 @@ function Contact() {
               )}
             </button>
           </div>
-          <div className="relative top-48 z-10 w-full h-full flex flex-col items-center col-span-6">
+          <div className="sm:relative sm:top-48 z-10 w-full h-full flex flex-col items-center sm:col-span-6 col-span-12">
             <img
               src={flameSucGif}
               alt="..."

@@ -1,4 +1,8 @@
-import { ArrowRightIcon, EnvelopeIcon, PhoneArrowDownLeftIcon } from "@heroicons/react/24/outline";
+import {
+  ArrowRightIcon,
+  EnvelopeIcon,
+  PhoneArrowDownLeftIcon,
+} from "@heroicons/react/24/outline";
 import FlameGif from "../assets/flame-no-connection.gif";
 
 function About() {
@@ -10,23 +14,28 @@ function About() {
             Who is Christian Marín?
           </h2>
           <p className="text-5xl font-normal leading-normal">
-            Christian Marín is an front-end developer exploring Step by step the
-            interplay between JavaScript, TypeScript and jQuery.
+            Christian Marín is an front-end developer learning step by step what is going on between JavaScript and TypeScript.
           </p>
         </div>
         <div className="grid grid-cols-12 w-full h-fit gap-4">
-          <div className="col-span-6 w-full h-fit rounded-xl bg-gray-200 p-4 flex flex-col justify-center gap-y-4">
+          <div
+            className="col-span-12 sm:col-span-6 w-full h-fit rounded-xl bg-gray-200 p-4 flex flex-col justify-center gap-y-4 cursor-pointer"
+            onClick={() => (window.location.href = "/contact")}
+          >
             <p className="text-4xl font-medium dark:text-gray-600">
               Feel free to contact me for projects and collaborations.
             </p>
             <figure className="w-[256px] h-[256px] mx-auto">
-              <img src={FlameGif} alt="gif..." className="w-full h-fit" />
+              <img src={FlameGif} alt="gif..." className="w-full h-full" />
             </figure>
             <div className="w-full flex items-center justify-end">
-              <ArrowRightIcon width={48} className="transform rotate-45 dark:text-gray-600" />
+              <ArrowRightIcon
+                width={48}
+                className="transform rotate-45 dark:text-gray-600"
+              />
             </div>
           </div>
-          <div className="col-span-6 w-full h-fit rounded-xl bg-transparent flex flex-col justify-center gap-y-4">
+          <div className="col-span-12 sm:col-span-6 w-full h-fit rounded-xl bg-transparent flex flex-col justify-center gap-y-4">
             <div className="flex flex-col gap-y-4">
               <h3 className="text-lg dark:text-gray-600 bg-gray-200 py-1 px-2 w-fit rounded-xl font-semibold">
                 Technologies
@@ -42,27 +51,36 @@ function About() {
                 Goals for 2023
               </h3>
               <p className="text-2xl font-normal">
-                <span>Dream job</span>, <span>Get my first car</span>, <span>Learn more about full-stack engineering</span>,{" "}
+                <span>Dream job</span>, <span>Get my first car</span>,{" "}
+                <span>Learn more about full-stack engineering</span>,{" "}
                 <span>Read more books</span>, <span>Workout harder</span>,{" "}
-                <span>Healthy life</span>, <span>Travel in Venezuela and out of the country</span>.
+                <span>Healthy life</span>,{" "}
+                <span>Travel in Venezuela and out of the country</span>.
               </p>
             </div>
           </div>
-          <div className="col-span-6 w-full h-fit rounded-xl bg-transparent flex flex-col justify-center gap-y-4">
+          <div className="col-span-12 sm:col-span-6 w-full h-fit rounded-xl bg-transparent flex flex-col justify-center gap-y-4">
             <div className="flex flex-col gap-y-4">
               <h3 className="text-lg bg-gray-200 py-1 px-2 w-fit rounded-xl font-semibold flex gap-x-2 dark:text-gray-600">
                 Email <EnvelopeIcon width={24} />
               </h3>
               <p className="text-2xl font-normal">
-                <a href="mailto:chrismarin0607@gmail.com" className="hover:underline">chrismarin0607@gmail.com</a>
+                <a
+                  href="mailto:chrismarin0607@gmail.com"
+                  className="hover:underline"
+                >
+                  chrismarin0607@gmail.com
+                </a>
               </p>
             </div>
-            <div className="flex flex-col gap-y-4">
+            <div className="flex flex-col gap-y-4 sm:col-span-6 col-span-12">
               <h3 className="text-lg bg-gray-200 py-1 px-2 w-fit rounded-xl font-semibold dark:text-gray-600 flex gap-x-2">
                 Whatsapp me <PhoneArrowDownLeftIcon width={24} />
               </h3>
               <p className="text-2xl font-normal">
-                <a href="tel:+584243157104" className="hover:underline">+58 424 315 7104</a>
+                <a href="tel:+584243157104" className="hover:underline">
+                  +58 424 315 7104
+                </a>
               </p>
             </div>
           </div>
