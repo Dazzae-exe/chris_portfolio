@@ -16,7 +16,7 @@ function Navbar() {
             Menu
           </button>
           <div
-            className={`relative w-fit h-fit top-1 transform transition-all duration-150 ease-linear ${
+            className={`block sm:hidden relative w-fit h-fit top-1 transform transition-all duration-150 ease-linear ${
               openMenu
                 ? "z-20 opacity-100 translate-y-0"
                 : "z-0 opacity-0 -translate-y-1"
