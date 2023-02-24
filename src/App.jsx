@@ -1,22 +1,20 @@
 // imports
-import "./App.css";
+import "./assets/styles/App.css";
 import {
   createBrowserRouter,
   createRoutesFromElements,
   Route,
-  Link,
-  NavLink,
   RouterProvider,
 } from "react-router-dom";
 
 // pages
-import ErrorPage from "./routes/ErrorPage";
-import Home from "./routes/Home";
-import About from "./routes/About";
+import ErrorPage from "./routes/Errorpage/ErrorPage";
+import Home from "./routes/Homepage/Home";
+import About from "./routes/Aboutpage/About";
+import Contact from "./routes/Contactpage/Contact";
 
 // layout
 import RootLayout from "./layouts/RootLayout";
-import Contact from "./routes/Contact";
 
 const router = createBrowserRouter(
   createRoutesFromElements(

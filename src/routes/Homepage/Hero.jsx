@@ -1,4 +1,4 @@
-import heroImg from "../assets/hero.jpg";
+import heroImg from "../../assets/jpg/hero.jpg";
 import { ArrowDownCircleIcon } from "@heroicons/react/24/outline";
 
 function Hero() {

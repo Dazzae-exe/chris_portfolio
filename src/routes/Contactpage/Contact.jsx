@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Puff } from "react-loader-spinner";
-import flameSucGif from "../assets/flame-success.gif";
+import Gif from "../../assets/gif/flame-success.gif";
 
 function Contact() {
   const [loader, setLoader] = useState(false);
@@ -83,7 +83,7 @@ function Contact() {
           </div>
           <div className="sm:relative sm:top-48 z-10 w-full h-full flex flex-col items-center sm:col-span-6 col-span-12">
             <img
-              src={flameSucGif}
+              src={Gif}
               alt="..."
               className="w-80 h-80 object-cover object-center bg-no-repeat drop-shadow-sm"
             />
