@@ -1,21 +1,21 @@
-import heroImg from "../../assets/jpg/hero.jpg";
 import { ArrowDownCircleIcon } from "@heroicons/react/24/outline";
+import darkHomepageShape from "../../assets/png/dark-homepage-shape.png";
 
 function Hero() {
   return (
     <main className="max-w-full max-h-screen">
       <div className="container mx-auto w-full h-screen flex flex-col items-center justify-center gap-y-2">
         <div className="w-full flex items-center justify-center gap-x-2">
-          <h1 className="text-5xl font-bold leading-loose">Christian Marín</h1>
+          <h1 className="text-5xl font-bold">Christian Marín</h1>
         </div>
-        <p className="text-2xl font-medium leading-relaxed text-center">
+        <p className="text-2xl font-medium text-center">
           Front-end Developer based in Venezuela.
         </p>
-        <figure className="w-full h-1/2 rounded-xl overflow-hidden">
+        <figure className="w-full h-fit overflow-hidden flex items-center justify-center animate-slow-spin">
           <img
-            src={heroImg}
+            src={darkHomepageShape}
             alt=""
-            className="w-full h-full object-cover object-top"
+            className="w-48 h-48 object-cover object-top"
           />
         </figure>
         <div className="flex flex-col items-center">

@@ -1,4 +1,5 @@
 // imgs
+import { ArrowLeftIcon } from "@heroicons/react/24/outline";
 import Thrumyeyes from "../../assets/png/projectPortfolio--black.png";
 
 const allProjects = [
@@ -14,38 +15,36 @@ const allProjects = [
     projectTailwindBoxClass: "flex flex-col items-end w-full",
     projectTailwindBoxTextClass: "text-xl font-bold leading-[2.5] text-end",
     projectTailwindBoxDescriptionClass: "w-9/12 h-fit text-lg text-end",
-  }
+  },
 ];
 
 function Projects() {
   return (
     <section className="max-w-full max-h-full">
-      <div className="container w-full h-fit mx-auto grid grid-cols-12 gap-y-16">
-        <h2 className="text-4xl font-bold leading-[2.5] col-span-12">
-          Projects
-        </h2>
-        {allProjects.map((project) => (
-          <div className={project.projectTailwindClass} key={project.projectId}>
-            <figure className="w-full mobile:w-6/12 h-80 bg-gray-200 rounded-xl shadow-md overflow-hidden">
-              <img
-                src={project.imgLink}
-                alt="..."
-                className="w-full object-cover object-center bg-no-repeat h-full"
-              />
-            </figure>
-            <div className={project.projectTailwindBoxClass}>
-              <h3 className={project.projectTailwindBoxTextClass}>
-                {project.name}
-              </h3>
-              <p className={project.projectTailwindBoxDescriptionClass}>
-                {project.description}
-              </p>
-              <span className={project.projectTailwindIdClass} id="idProject">
-                {project.projectId}
-              </span>
-            </div>
-          </div>
-        ))}
+      <div className="container w-full h-fit mx-auto grid grid-cols-12 gap-4">
+        <h2 className="text-4xl font-bold col-span-12">Projects</h2>
+        <div className="col-span-6 w-full bg-transparent p-4 flex items-center justify-center border rounded-md">
+          Img content selected
+        </div>
+        <div className="col-span-6 w-full h-full border rounded-md">
+          <ul className="w-full h-full last:border-b-0">
+            <li className="border-b p-4 w-full flex items-center justify-end">
+              <h3 className="text-xl font-extrabold">Web development</h3>
+            </li>
+            <li className="border-b p-4 w-full flex items-center justify-end gap-x-2 hover:gap-x-8 transition-all duration-150 ease-in-out cursor-pointer">
+              <span><ArrowLeftIcon width={24}/></span>
+              <h4>Thrumyeyes</h4>
+            </li>
+            <li className="border-b p-4 w-full flex items-center justify-end gap-x-2 hover:gap-x-8 transition-all duration-150 ease-in-out cursor-pointer">
+            <span><ArrowLeftIcon width={24}/></span>
+              <h4>Option</h4>
+            </li>
+            <li className="p-4 w-full flex items-center justify-end gap-x-2 hover:gap-x-8 transition-all duration-150 ease-in-out cursor-pointer">
+            <span><ArrowLeftIcon width={24}/></span>
+              <h4>Option</h4>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
   );

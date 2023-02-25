@@ -20,7 +20,7 @@ function About() {
         </div>
         <div className="grid grid-cols-12 w-full h-fit gap-4">
           <div
-            className="col-span-12 sm:col-span-6 w-full h-fit rounded-xl bg-gray-200 p-4 flex flex-col justify-center gap-y-4 cursor-pointer"
+            className="col-span-12 sm:col-span-6 w-full h-fit rounded-md bg-gray-200 p-4 flex flex-col justify-center gap-y-4 cursor-pointer"
             onClick={() => (window.location.href = "/contact")}
           >
             <p className="text-4xl font-medium dark:text-gray-600">
@@ -36,9 +36,9 @@ function About() {
               />
             </div>
           </div>
-          <div className="col-span-12 sm:col-span-6 w-full h-fit rounded-xl bg-transparent flex flex-col justify-center gap-y-4">
+          <div className="col-span-12 sm:col-span-6 w-full h-fit rounded-md bg-transparent flex flex-col justify-center gap-y-4">
             <div className="flex flex-col gap-y-4">
-              <h3 className="text-lg dark:text-gray-600 bg-gray-200 py-1 px-2 w-fit rounded-xl font-semibold">
+              <h3 className="text-lg dark:text-gray-600 bg-gray-200 py-1 px-2 w-fit rounded-md font-semibold">
                 Technologies
               </h3>
               <p className="text-2xl font-normal">
@@ -48,7 +48,7 @@ function About() {
               </p>
             </div>
             <div className="flex flex-col gap-y-4">
-              <h3 className="text-lg dark:text-gray-600 bg-gray-200 py-1 px-2 w-fit rounded-xl font-semibold">
+              <h3 className="text-lg dark:text-gray-600 bg-gray-200 py-1 px-2 w-fit rounded-md font-semibold">
                 Goals for 2023
               </h3>
               <p className="text-2xl font-normal">
@@ -60,9 +60,9 @@ function About() {
               </p>
             </div>
           </div>
-          <div className="col-span-12 sm:col-span-6 w-full h-fit rounded-xl bg-transparent flex flex-col justify-center gap-y-4">
+          <div className="col-span-12 sm:col-span-6 w-full h-fit rounded-md bg-transparent flex flex-col justify-center gap-y-4">
             <div className="flex flex-col gap-y-4">
-              <h3 className="text-lg bg-gray-200 py-1 px-2 w-fit rounded-xl font-semibold flex gap-x-2 dark:text-gray-600">
+              <h3 className="text-lg bg-gray-200 py-1 px-2 w-fit rounded-md font-semibold flex gap-x-2 dark:text-gray-600">
                 Email <EnvelopeIcon width={24} />
               </h3>
               <p className="text-2xl font-normal">
@@ -75,7 +75,7 @@ function About() {
               </p>
             </div>
             <div className="flex flex-col gap-y-4 sm:col-span-6 col-span-12">
-              <h3 className="text-lg bg-gray-200 py-1 px-2 w-fit rounded-xl font-semibold dark:text-gray-600 flex gap-x-2">
+              <h3 className="text-lg bg-gray-200 py-1 px-2 w-fit rounded-md font-semibold dark:text-gray-600 flex gap-x-2">
                 Whatsapp me <PhoneArrowDownLeftIcon width={24} />
               </h3>
               <p className="text-2xl font-normal">

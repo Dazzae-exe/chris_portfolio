@@ -10,7 +10,7 @@ function Navbar() {
         <h2 className="text-2xl font-bold ">{"<CM />"}</h2>
         <nav className="sm:block flex flex-col">
           <button
-            className="hover:text-gray-800 transition-colors duration-150 ease-linear cursor-pointer dark:text-white dark:hover:text-gray-200 px-2 py-1 dark:hover:bg-gray-500 dark:hover:bg-opacity-50 hover:bg-gray-200 rounded-xl sm:hidden block"
+            className="hover:text-gray-800 transition-colors duration-150 ease-linear cursor-pointer dark:text-white dark:hover:text-gray-200 px-2 py-1 dark:hover:bg-gray-500 dark:hover:bg-opacity-50 hover:bg-gray-200 rounded-md sm:hidden block"
             onClick={() => (openMenu ? setOpenMenu(false) : setOpenMenu(true))}
           >
             Menu
@@ -22,11 +22,11 @@ function Navbar() {
                 : "z-0 opacity-0 -translate-y-1"
             }`}
           >
-            <ul className="w-24 h-fit absolute z-20 flex flex-col items-start justify-center gap-y-4 p-2 bg-gray-100 rounded-xl">
+            <ul className="w-24 h-fit absolute z-20 flex flex-col items-start justify-center gap-y-4 p-2 bg-gray-100 rounded-md">
               <li>
                 <Link
                   to={`/`}
-                  className="hover:text-gray-800 transition-colors duration-150 ease-linear cursor-pointer dark:text-white dark:hover:text-gray-200 px-2 py-1 dark:hover:bg-gray-500 dark:hover:bg-opacity-50 hover:bg-gray-200 rounded-xl"
+                  className="hover:text-gray-800 transition-colors duration-150 ease-linear cursor-pointer dark:text-white dark:hover:text-gray-200 px-2 py-1 dark:hover:bg-gray-500 dark:hover:bg-opacity-50 hover:bg-gray-200 rounded-md"
                   onClick={() => setOpenMenu(false)}
                 >
                   Hero
@@ -35,7 +35,7 @@ function Navbar() {
               <li>
                 <Link
                   to={`/about`}
-                  className="hover:text-gray-800 transition-colors duration-150 ease-linear cursor-pointer dark:text-white dark:hover:text-gray-200 px-2 py-1 dark:hover:bg-gray-500 dark:hover:bg-opacity-50 hover:bg-gray-200 rounded-xl"
+                  className="hover:text-gray-800 transition-colors duration-150 ease-linear cursor-pointer dark:text-white dark:hover:text-gray-200 px-2 py-1 dark:hover:bg-gray-500 dark:hover:bg-opacity-50 hover:bg-gray-200 rounded-md"
                   onClick={() => setOpenMenu(false)}
                 >
                   About
@@ -44,7 +44,7 @@ function Navbar() {
               <li>
                 <Link
                   to={`/contact`}
-                  className="hover:text-gray-800 transition-colors duration-150 ease-linear cursor-pointer dark:text-white dark:hover:text-gray-200 px-2 py-1 dark:hover:bg-gray-500 dark:hover:bg-opacity-50 hover:bg-gray-200 rounded-xl"
+                  className="hover:text-gray-800 transition-colors duration-150 ease-linear cursor-pointer dark:text-white dark:hover:text-gray-200 px-2 py-1 dark:hover:bg-gray-500 dark:hover:bg-opacity-50 hover:bg-gray-200 rounded-md"
                   onClick={() => setOpenMenu(false)}
                 >
                   Contact
@@ -53,13 +53,13 @@ function Navbar() {
             </ul>
           </div>
           <ul className="sm:flex items-center gap-x-2 hidden font-medium text-lg">
-            <li className="hover:text-gray-800 transition-colors duration-150 ease-linear cursor-pointer dark:text-white dark:hover:text-gray-200 px-2 py-1 dark:hover:bg-gray-500 dark:hover:bg-opacity-50 hover:bg-gray-200 rounded-xl">
+            <li className="hover:text-gray-800 transition-colors duration-150 ease-linear cursor-pointer dark:text-white dark:hover:text-gray-200 px-2 py-1 dark:hover:bg-gray-500 dark:hover:bg-opacity-50 hover:bg-gray-200 rounded-md">
               <Link to={`/`}>Hero</Link>
             </li>
-            <li className="hover:text-gray-800 transition-colors duration-150 ease-linear cursor-pointer dark:text-white dark:hover:text-gray-200 px-2 py-1 dark:hover:bg-gray-500 dark:hover:bg-opacity-50 hover:bg-gray-200 rounded-xl">
+            <li className="hover:text-gray-800 transition-colors duration-150 ease-linear cursor-pointer dark:text-white dark:hover:text-gray-200 px-2 py-1 dark:hover:bg-gray-500 dark:hover:bg-opacity-50 hover:bg-gray-200 rounded-md">
               <Link to="/about">About</Link>
             </li>
-            <li className="hover:text-gray-800 transition-colors duration-150 ease-linear cursor-pointer dark:text-white dark:hover:text-gray-200 px-2 py-1 dark:hover:bg-gray-500 dark:hover:bg-opacity-50 hover:bg-gray-200 rounded-xl">
+            <li className="hover:text-gray-800 transition-colors duration-150 ease-linear cursor-pointer dark:text-white dark:hover:text-gray-200 px-2 py-1 dark:hover:bg-gray-500 dark:hover:bg-opacity-50 hover:bg-gray-200 rounded-md">
               <Link to="/contact">Contact</Link>
             </li>
           </ul>

@@ -21,7 +21,7 @@ function Contact() {
           method="post"
           className="grid grid-cols-12 gap-y-8 sm:gap-x-4 pt-12"
         >
-          <div className="w-full bg-gray-200 p-4 rounded-xl h-full flex flex-col items-start col-span-12 sm:col-span-6 gap-y-2">
+          <div className="w-full bg-gray-200 p-4 rounded-md h-full flex flex-col items-start col-span-12 sm:col-span-6 gap-y-2">
             <label
               htmlFor="name"
               className="dark:text-black text-lg font-normal"
@@ -33,7 +33,7 @@ function Contact() {
               name="name"
               id="name"
               placeholder="Chris Marín..."
-              className="w-full bg-gray-300 focus:bg-gray-400 outline-none rounded-xl py-1 px-2 focus:ring-2 focus:ring-gray-500 shadow-sm transition-all duration-100 ease-linear placeholder:text-gray-600 dark:text-black"
+              className="w-full bg-gray-300 focus:bg-gray-400 outline-none rounded-md py-1 px-2 focus:ring-2 focus:ring-gray-500 shadow-sm transition-all duration-100 ease-linear placeholder:text-gray-600 dark:text-black"
             />
             <label
               htmlFor="email"
@@ -46,7 +46,7 @@ function Contact() {
               name="email"
               id="email"
               placeholder="chris@gmail..."
-              className="w-full bg-gray-300 focus:bg-gray-400 outline-none rounded-xl py-1 px-2 focus:ring-2 focus:ring-gray-500 shadow-sm transition-all duration-100 ease-linear placeholder:text-gray-600 dark:text-black"
+              className="w-full bg-gray-300 focus:bg-gray-400 outline-none rounded-md py-1 px-2 focus:ring-2 focus:ring-gray-500 shadow-sm transition-all duration-100 ease-linear placeholder:text-gray-600 dark:text-black"
             />
             <label
               htmlFor="message"
@@ -58,11 +58,11 @@ function Contact() {
               placeholder="Your message..."
               name="message"
               id="message"
-              className="w-full bg-gray-300 focus:bg-gray-400 outline-none rounded-xl py-1 px-2 focus:ring-2 focus:ring-gray-500 shadow-sm transition-all duration-100 ease-linear placeholder:text-gray-600 dark:text-black"
+              className="w-full bg-gray-300 focus:bg-gray-400 outline-none rounded-md py-1 px-2 focus:ring-2 focus:ring-gray-500 shadow-sm transition-all duration-100 ease-linear placeholder:text-gray-600 dark:text-black"
             ></textarea>
             <button
               type="button"
-              className="w-full py-2 px-2 bg-gray-300 focus:bg-gray-400 shadow-sm focus:ring-2 focus:ring-gray-500 transition-all duration-100 ease-linear dark:text-black mt-4 rounded-xl text-center flex items-center justify-center"
+              className="w-full py-2 px-2 bg-gray-300 focus:bg-gray-400 shadow-sm focus:ring-2 focus:ring-gray-500 transition-all duration-100 ease-linear dark:text-black mt-4 rounded-md text-center flex items-center justify-center"
               onClick={() => setLoader(true)}
             >
               {loader ? (
