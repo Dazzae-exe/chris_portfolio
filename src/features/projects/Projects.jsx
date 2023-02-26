@@ -24,7 +24,7 @@ function Projects() {
       <div className="container w-full h-fit mx-auto grid grid-cols-12 gap-4">
         <h2 className="text-4xl font-bold col-span-12">Projects</h2>
         <div className="col-span-6 w-full bg-transparent p-4 flex items-center justify-center border rounded-md">
-          Img content selected
+          Feature soon...
         </div>
         <div className="col-span-6 w-full h-full border rounded-md">
           <ul className="w-full h-full last:border-b-0">
@@ -37,11 +37,11 @@ function Projects() {
             </li>
             <li className="border-b p-4 w-full flex items-center justify-end gap-x-2 hover:gap-x-8 transition-all duration-150 ease-in-out cursor-pointer">
             <span><ArrowLeftIcon width={24}/></span>
-              <h4>Option</h4>
+              <h4>Nubes</h4>
             </li>
             <li className="p-4 w-full flex items-center justify-end gap-x-2 hover:gap-x-8 transition-all duration-150 ease-in-out cursor-pointer">
             <span><ArrowLeftIcon width={24}/></span>
-              <h4>Option</h4>
+              <h4>Notely</h4>
             </li>
           </ul>
         </div>
