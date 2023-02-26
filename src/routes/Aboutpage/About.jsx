@@ -20,7 +20,7 @@ function About() {
         </div>
         <div className="grid grid-cols-12 w-full h-fit gap-4">
           <div
-            className="col-span-12 sm:col-span-6 w-full h-fit rounded-md bg-gray-200 p-4 flex flex-col justify-center gap-y-4 cursor-pointer"
+            className="col-span-12 sm:col-span-6 w-full h-fit rounded-md border p-4 flex flex-col justify-center gap-y-4 cursor-pointer"
             onClick={() => (window.location.href = "/contact")}
           >
             <p className="text-4xl font-medium dark:text-gray-600">

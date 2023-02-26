@@ -19,74 +19,78 @@ function Contact() {
 
         <form
           method="post"
-          className="grid grid-cols-12 gap-y-8 sm:gap-x-4 pt-12"
+          className="grid grid-cols-12 gap-y-8 sm:gap-x-4 pt-12 h-full"
         >
-          <div className="w-full bg-gray-200 p-4 rounded-md h-full flex flex-col items-start col-span-12 sm:col-span-6 gap-y-2">
-            <label
-              htmlFor="name"
-              className="dark:text-black text-lg font-normal"
-            >
-              Name
-            </label>
-            <input
-              type="text"
-              name="name"
-              id="name"
-              placeholder="Chris Marín..."
-              className="w-full bg-gray-300 focus:bg-gray-400 outline-none rounded-md py-1 px-2 focus:ring-2 focus:ring-gray-500 shadow-sm transition-all duration-100 ease-linear placeholder:text-gray-600 dark:text-black"
-            />
-            <label
-              htmlFor="email"
-              className="dark:text-black text-lg font-normal"
-            >
-              Email
-            </label>
-            <input
-              type="text"
-              name="email"
-              id="email"
-              placeholder="chris@gmail..."
-              className="w-full bg-gray-300 focus:bg-gray-400 outline-none rounded-md py-1 px-2 focus:ring-2 focus:ring-gray-500 shadow-sm transition-all duration-100 ease-linear placeholder:text-gray-600 dark:text-black"
-            />
-            <label
-              htmlFor="message"
-              className="dark:text-black text-lg font-normal"
-            >
-              Message
-            </label>
-            <textarea
-              placeholder="Your message..."
-              name="message"
-              id="message"
-              className="w-full bg-gray-300 focus:bg-gray-400 outline-none rounded-md py-1 px-2 focus:ring-2 focus:ring-gray-500 shadow-sm transition-all duration-100 ease-linear placeholder:text-gray-600 dark:text-black"
-            ></textarea>
-            <button
-              type="button"
-              className="w-full py-2 px-2 bg-gray-300 focus:bg-gray-400 shadow-sm focus:ring-2 focus:ring-gray-500 transition-all duration-100 ease-linear dark:text-black mt-4 rounded-md text-center flex items-center justify-center"
-              onClick={() => setLoader(true)}
-            >
-              {loader ? (
-                <Puff
-                  height="24"
-                  width="24"
-                  radius={1}
-                  color="#181818"
-                  ariaLabel="puff-loading"
-                  wrapperStyle={{}}
-                  wrapperClass=""
-                  visible={true}
-                />
-              ) : (
-                "Send me"
-              )}
-            </button>
-          </div>
-          <div className="sm:relative sm:top-48 z-10 w-full h-full flex flex-col items-center sm:col-span-6 col-span-12">
-            <img
-              src={Gif}
-              alt="..."
-              className="w-80 h-80 object-cover object-center bg-no-repeat drop-shadow-sm"
-            />
+          <div className="w-full border p-4 rounded-md h-full flex flex-col items-center col-span-12 justify-center gap-y-2">
+            <div className="w-1/2">
+              <label
+                htmlFor="name"
+                className="dark:text-black text-lg font-normal"
+              >
+                Name
+              </label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Chris Marín..."
+                className="w-full bg-gray-300 focus:bg-gray-400 outline-none rounded-md py-1 px-2 focus:ring-2 focus:ring-gray-500 shadow-sm transition-all duration-100 ease-linear placeholder:text-gray-600 dark:text-black"
+              />
+            </div>
+
+            <div className="w-1/2 h-fit">
+              <label
+                htmlFor="email"
+                className="dark:text-black text-lg font-normal"
+              >
+                Email
+              </label>
+              <input
+                type="text"
+                name="email"
+                id="email"
+                placeholder="chris@gmail..."
+                className="w-full bg-gray-300 focus:bg-gray-400 outline-none rounded-md py-1 px-2 focus:ring-2 focus:ring-gray-500 shadow-sm transition-all duration-100 ease-linear placeholder:text-gray-600 dark:text-black"
+              />
+            </div>
+
+            <div className="w-1/2">
+              <label
+                htmlFor="message"
+                className="dark:text-black text-lg font-normal"
+              >
+                Message
+              </label>
+              <textarea
+                placeholder="Your message..."
+                name="message"
+                id="message"
+                className="w-full bg-gray-300 focus:bg-gray-400 outline-none rounded-md py-1 px-2 focus:ring-2 focus:ring-gray-500 shadow-sm transition-all duration-100 ease-linear placeholder:text-gray-600 dark:text-black"
+              ></textarea>
+            </div>
+
+            <div className="w-1/2">
+              <button
+                type="button"
+                className="w-full py-2 px-2 bg-gray-300 focus:bg-gray-400 shadow-sm focus:ring-2 focus:ring-gray-500 transition-all duration-100 ease-linear dark:text-black mt-4 rounded-md text-center flex items-center justify-center"
+                onClick={() => setLoader(true)}
+              >
+                {loader ? (
+                  <Puff
+                    height="24"
+                    width="24"
+                    radius={1}
+                    color="#181818"
+                    ariaLabel="puff-loading"
+                    wrapperStyle={{}}
+                    wrapperClass=""
+                    visible={true}
+                  />
+                ) : (
+                  "Send me"
+                )}
+              </button>
+            </div>
           </div>
         </form>
       </div>
