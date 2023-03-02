@@ -1,28 +1,24 @@
 import { ArrowLeftIcon } from "@heroicons/react/24/outline";
 import { useRecoilState } from "recoil";
-import {
-  useProjectAnimState,
-  useProjectSelectState,
-} from "../../lib/recoil/projects/projectsSelect";
-import { allProjects } from "../../utils/getAllProjects";
+import { useProjectSelectState } from "../../lib/recoil/projects/projectsSelect";
 
 function Project() {
-  const [project, setProject] = useRecoilState(useProjectSelectState);
-  const [projectAnim, setProjectAnim] = useRecoilState(useProjectAnimState);
+  const [projects, setProjects] = useRecoilState(useProjectSelectState);
 
-  const projectHandler = (evt) => {
-    const timeoutNewProjects = setTimeout(() => {
-      setProject([evt]);
-      setProjectAnim(true);
-    }, 1000);
+  const projectHandler = (id) => {
+    let obj = JSON.parse(JSON.stringify(projects));
 
-    const timeoutImg = setTimeout(() => {
-      setProject([]);
-    }, 400);
+    obj.map((arr) => {
+      if (arr.id === id) {
+        arr.selected = true;
+      } else {
+        arr.selected = false;
+      }
 
-    setProjectAnim(false);
+      return arr;
+    });
 
-    return timeoutNewProjects, timeoutImg;
+    setProjects(obj);
   };
 
   return (
@@ -31,11 +27,11 @@ function Project() {
         <li className="border-b p-4 w-full flex items-center justify-end">
           <h3 className="text-xl font-extrabold">Web development</h3>
         </li>
-        {allProjects.map((project) => (
+        {projects.map((project, idx) => (
           <li
             className="border-b p-4 w-full flex items-center justify-end gap-x-2 hover:gap-x-8 transition-all duration-150 ease-in-out cursor-pointer last:border-b-0"
-            key={project.projectId}
-            onClick={() => projectHandler(project.imgLink)}
+            key={project.id}
+            onClick={() => projectHandler(idx)}
           >
             <span>
               <ArrowLeftIcon width={24} />

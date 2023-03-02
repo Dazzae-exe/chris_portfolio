@@ -1,5 +1,4 @@
 import { ArrowDownCircleIcon } from "@heroicons/react/24/outline";
-import darkHomepageShape from "../../assets/png/dark-homepage-shape.png";
 
 function Hero() {
   return (
@@ -13,7 +12,7 @@ function Hero() {
         </p>
         <figure className="w-full h-fit overflow-hidden flex items-center justify-center animate-slow-spin">
           <img
-            src={darkHomepageShape}
+            src="https://i.postimg.cc/Z55St8H9/dark-homepage-shape.png"
             alt=""
             className="w-48 h-48 object-cover object-top"
           />

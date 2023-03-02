@@ -3,7 +3,6 @@ import {
   EnvelopeIcon,
   PhoneArrowDownLeftIcon,
 } from "@heroicons/react/24/outline";
-import Gif from "../../assets/gif/flame-no-connection.gif";
 
 function About() {
   return (
@@ -26,9 +25,6 @@ function About() {
             <p className="text-4xl font-medium dark:text-gray-600">
               Feel free to contact me for projects and collaborations.
             </p>
-            <figure className="w-[256px] h-[256px] mx-auto">
-              <img src={Gif} alt="gif..." className="w-full h-full" />
-            </figure>
             <div className="w-full flex items-center justify-end">
               <ArrowRightIcon
                 width={48}

@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Puff } from "react-loader-spinner";
-import Gif from "../../assets/gif/flame-success.gif";
 
 function Contact() {
   const [loader, setLoader] = useState(false);
