@@ -22,10 +22,10 @@ function Project() {
   };
 
   return (
-    <div className="col-span-6 w-full h-fit border rounded-md">
+    <div className="col-span-12 md:col-span-4 w-full h-fit border rounded-md">
       <ul className="w-full h-full last:border-b-0">
         <li className="border-b p-4 w-full flex items-center justify-end">
-          <h3 className="text-xl font-extrabold">Web development</h3>
+          <h3 className="text-xl font-extrabold">Choose</h3>
         </li>
         {projects.map((project, idx) => (
           <li

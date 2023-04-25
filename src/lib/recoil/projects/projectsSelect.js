@@ -8,12 +8,14 @@ export const useProjectSelectState = atom({
       name: "Thrumyeyes",
       projectImg: "https://i.postimg.cc/cJVynVSY/project-Portfolio-black.png",
       selected: false,
+      link: 'https://thrumyeyesfilm.com/'
     },
     {
       id: 1,
       name: "Nubes",
       projectImg: "https://i.postimg.cc/Mp0JQsGr/nubes-app.png",
       selected: false,
+      link: 'https://nubesweatherapp.netlify.app'
     },
   ],
 });

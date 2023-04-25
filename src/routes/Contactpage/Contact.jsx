@@ -6,25 +6,27 @@ function Contact() {
 
   return (
     <section className="max-w-full max-h-fit">
-      <div className="container mx-auto w-full h-screen pt-12 flex flex-col">
-        <h2 className="text-4xl font-bold leading-[2.5]">Contact</h2>
+      <div className="container mx-auto w-full h-screen flex flex-col gap-y-12">
+        <div className="w-full h-fit flex flex-col gap-y-4">
+          <h2 className="text-4xl font-bold">Contact</h2>
 
-        <p className="text-2xl font-normal">
-          I wonder if you're in this section it's because you might want to
-          connect with me for some interesting project in your buckets. Feel
-          free to contact me. We can book a meeting to talk more about the
-          project.
-        </p>
+          <p className="text-2xl font-normal">
+            I wonder if you're in this section it's because you might want to
+            connect with me for some interesting project in your buckets. Feel
+            free to contact me. We can book a meeting to talk more about the
+            project.
+          </p>
+        </div>
 
         <form
           method="post"
-          className="grid grid-cols-12 gap-y-8 sm:gap-x-4 pt-12 h-full"
+          className="grid grid-cols-12 gap-y-8 sm:gap-x-4 h-full"
         >
           <div className="w-full border p-4 rounded-md h-full flex flex-col items-center col-span-12 justify-center gap-y-2">
             <div className="w-1/2">
               <label
                 htmlFor="name"
-                className="dark:text-black text-lg font-normal"
+                className="dark:text-white text-lg font-normal"
               >
                 Name
               </label>
@@ -40,7 +42,7 @@ function Contact() {
             <div className="w-1/2 h-fit">
               <label
                 htmlFor="email"
-                className="dark:text-black text-lg font-normal"
+                className="dark:text-white text-lg font-normal"
               >
                 Email
               </label>
@@ -56,7 +58,7 @@ function Contact() {
             <div className="w-1/2">
               <label
                 htmlFor="message"
-                className="dark:text-black text-lg font-normal"
+                className="dark:text-white text-lg font-normal"
               >
                 Message
               </label>

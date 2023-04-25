@@ -7,19 +7,19 @@ import {
 function About() {
   return (
     <section className="max-w-full min-h-screen">
-      <div className="container mx-auto w-full h-full pt-12 flex flex-col gap-y-12">
-        <div className="flex flex-col items-start justify-center w-full h-fit py-2">
-          <h2 className="text-4xl font-bold leading-[2.5]">
+      <div className="container mx-auto w-full h-full flex flex-col gap-y-12">
+        <div className="flex flex-col items-start justify-center w-full h-fit py-2 gap-y-4">
+          <h2 className="text-4xl font-bold">
             Who is Christian Marín?
           </h2>
-          <p className="text-5xl font-normal leading-normal">
+          <p className="text-5xl font-normal">
             Christian Marín is an front-end developer learning step by step what
             is going on between JavaScript and TypeScript.
           </p>
         </div>
-        <div className="grid grid-cols-12 w-full h-fit gap-4">
+        <div className="grid grid-cols-12 w-full h-fit gap-y-8">
           <div
-            className="col-span-12 sm:col-span-6 w-full h-fit rounded-md border p-4 flex flex-col justify-center gap-y-4 cursor-pointer"
+            className="col-span-12 w-full h-fit rounded-md border p-4 flex flex-col justify-center gap-y-4 cursor-pointer"
             onClick={() => (window.location.href = "/contact")}
           >
             <p className="text-4xl font-medium dark:text-gray-600">
@@ -32,7 +32,7 @@ function About() {
               />
             </div>
           </div>
-          <div className="col-span-12 sm:col-span-6 w-full h-fit rounded-md bg-transparent flex flex-col justify-center gap-y-4">
+          <div className="col-span-12 w-full h-fit rounded-md bg-transparent flex flex-col justify-center gap-y-4">
             <div className="flex flex-col gap-y-4">
               <h3 className="text-lg dark:text-gray-600 bg-gray-200 py-1 px-2 w-fit rounded-md font-semibold">
                 Technologies
@@ -67,16 +67,6 @@ function About() {
                   className="hover:underline"
                 >
                   chrismarin0607@gmail.com
-                </a>
-              </p>
-            </div>
-            <div className="flex flex-col gap-y-4 sm:col-span-6 col-span-12">
-              <h3 className="text-lg bg-gray-200 py-1 px-2 w-fit rounded-md font-semibold dark:text-gray-600 flex gap-x-2">
-                Whatsapp me <PhoneArrowDownLeftIcon width={24} />
-              </h3>
-              <p className="text-2xl font-normal">
-                <a href="tel:+584243157104" className="hover:underline">
-                  +58 424 315 7104
                 </a>
               </p>
             </div>
