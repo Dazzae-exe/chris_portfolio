@@ -9,10 +9,10 @@ import {
 import { RecoilRoot } from "recoil";
 
 // pages
-import ErrorPage from "./routes/Errorpage/ErrorPage";
-import Home from "./routes/Homepage/Home";
-import About from "./routes/Aboutpage/About";
-import Contact from "./routes/Contactpage/Contact";
+import ErrorPage from "./pages/Error404/ErrorPage";
+import Home from "./pages/Home/Home";
+import About from "./pages/About/About";
+import Contact from "./pages/Contact/Contact";
 
 // layout
 import RootLayout from "./layouts/RootLayout";

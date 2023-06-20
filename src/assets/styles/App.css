@@ -11,3 +11,21 @@
     @apply absolute block z-10 left-0 top-12 bg-gray-200 w-40 text-center p-1 transform translate-y-0 transition-all duration-150 ease-linear opacity-100 rounded-md text-sm dark:bg-gray-800 dark:text-white;
   }
 }
+
+@layer components {
+  .root-layout {
+    @apply flex flex-col items-center w-full h-full justify-start gap-y-12;
+  }
+
+  .input-field {
+    @apply w-full bg-dark-schema/5 focus:bg-dark-schema/10 dark:bg-light-schema/5 dark:focus:bg-light-schema/10 outline-none rounded-md py-1 px-2 focus:shadow-sm transition-all duration-100 ease-in-out mb-4;
+  }
+
+  .navbar-link {
+    @apply transition-all duration-300 ease-in-out cursor-pointer p-1.5 rounded-xl w-full text-dark-schema/40 dark:text-light-schema/40 hover:text-current transform hover:scale-105;
+  }
+
+  .contact-btn {
+    @apply p-2 rounded-xl bg-dark-schema bg-opacity-20;
+  }
+}

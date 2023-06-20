@@ -1,13 +1,13 @@
 import { Outlet } from "react-router-dom";
-import Footer from "../features/layouts/root/Footer";
-import Navbar from "../features/layouts/root/Navbar";
+import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
 
 function RootLayout() {
   return (
     <div className="root-layout">
       <Navbar />
 
-      <main>
+      <main className="w-full h-fit">
         <Outlet />
       </main>
 
