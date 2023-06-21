@@ -8,6 +8,7 @@ function Box(props) {
         <button
           type="button"
           className="py-2 px-6 rounded-xl bg-dark-schema/10 dark:bg-light-schema/10 text-lg font-medium"
+          onClick={props.onShowModal}
         >
           Entra en contacto
         </button>
