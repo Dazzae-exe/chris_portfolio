@@ -12,5 +12,12 @@
     "projectImg": "https://i.pinimg.com/564x/20/be/c8/20bec82ee8405ab980e8f0051956d3dc.jpg",
     "appDescription": "Weather app",
     "link": "https://nubesweatherapp.netlify.app"
+  },
+  {
+    "imageId": 2,
+    "name": "Pikasso",
+    "projectImg": "https://i.pinimg.com/564x/76/1e/62/761e625495f7b6d75408cf131ac8a0d1.jpg",
+    "appDescription": "Gallery app",
+    "link": "https://pikasso.netlify.app"
   }
 ]
