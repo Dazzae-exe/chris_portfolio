@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 function Box(props) {
   return (
-    <motion.div className={props.className} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0, transition: { type: "tween", duration: 0.8 }}} >
+    <motion.div className={props.className} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0, transition: { type: "tween", duration: 0.8, delay: 0.8 }}} >
       <p className={props.paragraphClassName}>{props.boxText}</p>
       {props.contactBtn === true ? (
         <button
