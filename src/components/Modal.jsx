@@ -5,7 +5,7 @@ import { XMarkIcon as CloseIcon } from "@heroicons/react/24/outline";
 
 function Modal(props) {
   return (
-    <motion.div className="absolute w-full h-screen inset-0 z-20">
+    <motion.div className="fixed w-full h-screen inset-0 z-20">
       <div className="black-layout absolute inset-0 bg-black/40"></div>
       <motion.div
         className="flex items-center justify-center relative h-full"
